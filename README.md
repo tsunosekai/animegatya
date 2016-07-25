@@ -1,0 +1,2 @@
+# animegatya
+ランダムにアニメを引くWEBアプリ
