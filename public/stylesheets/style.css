@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+#animeimg {
+  width: 100%;
+  max-height: 700px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}

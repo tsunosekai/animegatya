@@ -1,0 +1,12 @@
+{
+  // アニメ情報を保存するデータベースの名前
+  dbname: 'anime_demo709',
+  // アニメ情報元のファイルダウンロード先
+  fileUrl: 'http://anison.info/data/download/program.zip',
+  // データファイルの保存先
+  dataFilePath: './data',
+  // データファイルの名前
+  fileName: 'program.csv',
+  // アニメリストを処理するときにいったんスプリットするのに使う文字列
+  spliter: "___",
+}
