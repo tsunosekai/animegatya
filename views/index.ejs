@@ -1,50 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>アニメガチャ</title>
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
-  <link rel="stylesheet" href="/stylesheets/kube.min.css" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylesheets/kube.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-  <script type="text/javascript" src="/javascripts/jquery-2.2.3.min.js"></script>
-  <script type="text/javascript" src="/javascripts/script.js"></script>
+  <script src="javascripts/script.js"></script>
+  <title>ガチャ</title>
 </head>
-
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <h1>アニメガチャβ</h1>
-      </div>
+    <img src="images/navbar.png" class="justwidth">
+
+    <div id="before">
+      <img src="images/title.png" class="justwidth" id="title">
+      <img src="images/gatyaru1-1.png" class="justwidth" id="gatyaru">
     </div>
-    <div class="row">
-      <div class="col col-7">
-        <img id="animeimg" src="" alt="">
-        <table>
-          <tbody>
-            <tr>
-              <td>タイトル</td>
-              <td><h1 id="animetitle"></h1></td>
-            </tr>
-            <tr>
-              <td>放送開始</td>
-              <td><p id="startDay"></p></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col col-5">
-        <button class="button" id="draw">ガチャる！</button>
-      </div>
+    <div id="after">
+      <img id="animeimg" src="" alt="">
+      <h1 id="animetitle"></h1>
+      <p id="startDay"></p>
+      <img src="images/gatyaru2-1.png" class="justwidth" id="regatyaru">
     </div>
-    <div>
-      改良中...
-    </div>
-    <div>
-      説明
-    </div>
+
+    <img src="images/infobar.png" class="before justwidth">
+    <img src="images/plate.png" class="justwidth" id="plate">
   </div>
 </body>
-
 </html>

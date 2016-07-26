@@ -1,6 +1,6 @@
 {
   // アニメ情報を保存するデータベースの名前
-  dbname: 'anime_demo709',
+  dbname: 'anime_demo708',
   // アニメ情報元のファイルダウンロード先
   fileUrl: 'http://anison.info/data/download/program.zip',
   // データファイルの保存先

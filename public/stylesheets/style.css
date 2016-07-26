@@ -1,13 +1,49 @@
-body {
+body{
   margin: 0;
+  background-color: #262626;
 }
 
-#animeimg {
-  width: 100%;
-  max-height: 700px;
-}
-
-.container {
-  max-width: 1000px;
+.container{
+  max-width: 960px;
+  min-width: 320px;
   margin: auto;
+  background-color: rgb(27, 20, 100);
+  overflow: visible;
+  padding-bottom: 1em;
+}
+
+.justwidth{
+  display: block;
+  width:auto;
+  height:auto;
+  max-width:100%;
+  vertical-align: middle;/*IE7*/
+}
+
+#title{
+  margin: 3em auto 2em auto;
+  width:90%;
+}
+
+#gatyaru,#regatyaru{
+  margin: 1em auto 3em auto;
+  max-width:30%;
+}
+#gatyaru:hover,#regatyaru:hover{
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+}
+
+#plate{
+  margin: 1em auto 0 auto;
+}
+
+#after{
+  display: none;
+  text-align: center;
+  color: white;
+}
+
+#after h1{
+  color: white;
 }

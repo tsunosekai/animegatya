@@ -22,6 +22,7 @@ module.exports = (query) => {
 
     Anime.find(query, (err, item)=>{
       if(err){
+        console.log(err);
         reject(err);
         return;
       }

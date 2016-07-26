@@ -1,11 +1,23 @@
 $(function(){
   var socket = io.connect();
-  
-  $('#draw').on('click tap', function(){
-    $("#draw").prop("disabled", true);
-    socket.emit('draw');
-    $('#animeimg').attr('src', '/images/loading.gif');
-  });
+
+  $('#gatyaru')
+    .on('mousedown', ()=>$('#gatyaru').attr('src', 'images/gatyaru1-2.png'))
+    .on('mouseout', ()=>$('#gatyaru').attr('src', 'images/gatyaru1-1.png'))
+    .on('mouseup', ()=>{
+      $('#before').hide();
+      $('#after').show();
+      socket.emit('draw');
+      $('#animeimg').attr('src', '/images/loading.gif');
+    });
+
+  $('#regatyaru')
+    .on('mousedown', ()=>$('#regatyaru').attr('src', 'images/gatyaru2-2.png'))
+    .on('mouseout', ()=>$('#regatyaru').attr('src', 'images/gatyaru2-1.png'))
+    .on('mouseup', ()=>{
+      socket.emit('draw');
+      $('#animeimg').attr('src', '/images/loading.gif');
+    });
 
   socket.on('anime', function(anime){
     $('#animetitle').text(anime.name);
